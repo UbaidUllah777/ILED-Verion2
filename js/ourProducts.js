@@ -1,3 +1,11 @@
+const ElidProductName = document.getElementById("idProductName");
+const ElidProductHeadingLine = document.getElementById("idProductHeadingLine");
+const ElidProductDetail_one = document.getElementById("idProductDetail_one");
+const ElidProductDetail_two = document.getElementById("idProductDetail_two");
+const ElidtagLine_one = document.getElementById("idtagLine_one");
+const ElidtagLine_two = document.getElementById("idtagLine_two");
+const ElidtagLine_three = document.getElementById("idtagLine_three");
+
 //  ********* VENDERING ALL PRPERTY NAMES OF THE THREE TABLES ********
 const ElpixelPitch = document.getElementById("pixelPitch");
 const Elresolution = document.getElementById("resolution");
@@ -31,8 +39,13 @@ const ourProducts = [
   {
     id: "3DHOLOGRAM",
     productName: "3D HOLOGRAM",
-    productHeadingLine: "",
-    productDetail: "",
+    productHeadingLine:
+      "Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
     productImages: [
       {
         image: "",
@@ -232,6 +245,9 @@ const ourProducts = [
     productName: "UL TRANSPARENT LED DISPLAY",
     productHeadingLine: "",
     productDetail: "",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
     productImages: [
       {
         image: "",
@@ -431,6 +447,9 @@ const ourProducts = [
     productName: "ILED SPECIAL TILE Series",
     productHeadingLine: "",
     productDetail: "",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
     productImages: [
       {
         image: "",
@@ -630,6 +649,9 @@ const ourProducts = [
     productName: "IB SERIES (BLACK LED)",
     productHeadingLine: "",
     productDetail: "",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
     productImages: [
       {
         image: "",
@@ -829,6 +851,9 @@ const ourProducts = [
     productName: "TAXI TOP",
     productHeadingLine: "",
     productDetail: "",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
     productImages: [
       {
         image: "",
@@ -1028,6 +1053,9 @@ const ourProducts = [
     productName: "STREET POLE",
     productHeadingLine: "",
     productDetail: "",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
     productImages: [
       {
         image: "",
@@ -1227,6 +1255,9 @@ const ourProducts = [
     productName: "ILEX SERIES",
     productHeadingLine: "",
     productDetail: "",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
     productImages: [
       {
         image: "",
@@ -1424,6 +1455,13 @@ const ourProducts = [
 //  ********** RENDERING DATA ON THE 3 TABLES(SPACIFICATIONS)  **********
 for (const singleProduct of ourProducts) {
   if (singleProduct.id === clickedProduct) {
+    ElidProductName.textContent = `${singleProduct.productName}`;
+    ElidProductHeadingLine.textContent = `${singleProduct.productHeadingLine}`;
+    ElidProductDetail_one.textContent = `${singleProduct.productDetail}`;
+    ElidtagLine_one.textContent = `${singleProduct.tagLine_one}`;
+    ElidtagLine_two.textContent = `${singleProduct.tagLine_two}`;
+    ElidtagLine_three.textContent = `${singleProduct.tagLine_three}`;
+
     for (const singleProperty of singleProduct.DisplayProperties) {
       if (singleProperty.id == "pixelPitch") {
         for (singleValue of singleProperty.Values) {
