@@ -243,8 +243,10 @@ const ourProducts = [
   {
     id: "UlTransparentLedDisplay",
     productName: "UL TRANSPARENT LED DISPLAY",
-    productHeadingLine: "",
-    productDetail: "",
+    productHeadingLine:
+      "Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain ",
+    productDetail:
+      "When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
@@ -267,7 +269,12 @@ const ourProducts = [
       {
         id: "pixelPitch",
         name: "Pixel Pitch",
-        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+        Values: [
+          { value: "P3.91" },
+          { value: "P3.91" },
+          { value: "P7.82" },
+          { value: "P7.82" },
+        ],
       },
 
       // Resolution
@@ -275,9 +282,10 @@ const ourProducts = [
         id: "resolution",
         name: "Resolution",
         Values: [
-          { value: "500000" },
-          { value: "1200000" },
-          { value: "100800" },
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
         ],
       },
 
@@ -286,9 +294,10 @@ const ourProducts = [
         id: "brightness",
         name: "Brightness",
         Values: [
-          { value: "1600nits" },
-          { value: "1600nits" },
-          { value: "1600nits" },
+          { value: "2500nits" },
+          { value: "1200nits" },
+          { value: "4500nits" },
+          { value: "2500nits" },
         ],
       },
 
@@ -297,9 +306,10 @@ const ourProducts = [
         id: "refreshRate",
         name: "Refresh Rate",
         Values: [
-          { value: NotAvailable },
-          { value: NotAvailable },
-          { value: NotAvailable },
+          { value: "1920Hz, 3840Hz" },
+          { value: " 1920Hz, 3840Hz" },
+          { value: " 1920Hz, 3840Hz" },
+          { value: " 1920Hz, 3840Hz" },
         ],
       },
 
@@ -307,14 +317,24 @@ const ourProducts = [
       {
         id: "contrast5000",
         name: "Contrast_5000",
-        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
       },
 
       // Color Depth
       {
         id: "colorDepth",
         name: "Color Depth",
-        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+        Values: [
+          { value: "14bit" },
+          { value: "14bit" },
+          { value: "14bit" },
+          { value: "14bit" },
+        ],
       },
 
       // Viewing Angle
@@ -322,9 +342,10 @@ const ourProducts = [
         id: "viewingAngle",
         name: "Viewing Angle",
         Values: [
-          { value: "140/140" },
-          { value: "140/140" },
-          { value: "140/140" },
+          { value: "160/120" },
+          { value: "160/120" },
+          { value: "160/120" },
+          { value: "160/120" },
         ],
       },
 
@@ -332,7 +353,12 @@ const ourProducts = [
       {
         id: "diodeType",
         name: "Diode Type",
-        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+        Values: [
+          { value: "SMD" },
+          { value: "SMD" },
+          { value: "SMD" },
+          { value: "SMD" },
+        ],
       },
 
       //    ************ENGINEERING TABLE*************
@@ -341,14 +367,24 @@ const ourProducts = [
       {
         id: "indoorOutdoor",
         name: "Indoor/Outdoor",
-        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+        Values: [
+          { value: "Indoor" },
+          { value: "Indoor" },
+          { value: "Indoor" },
+          { value: "Indoor" },
+        ],
       },
 
       // Operating Temprature
       {
         id: "operatingTemprature",
         name: "Operating Temprature",
-        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+        Values: [
+          { value: "-10 ~ 100  F" },
+          { value: "-10 ~ 100  F" },
+          { value: "-10 ~ 100  F" },
+          { value: "-10 ~ 100  F" },
+        ],
       },
 
       // Operating Humidity
@@ -356,9 +392,10 @@ const ourProducts = [
         id: "operatingHumidity",
         name: "Operating Humidity",
         Values: [
-          { value: "0 to 70%" },
-          { value: "0 to 70%" },
-          { value: "0 to 70%" },
+          { value: "40%" },
+          { value: "40%" },
+          { value: "40%" },
+          { value: "40%" },
         ],
       },
 
@@ -366,21 +403,36 @@ const ourProducts = [
       {
         id: "enviromentRating",
         name: "Enviroment Rating",
-        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+        Values: [
+          { value: "Ip45" },
+          { value: "Ip45" },
+          { value: "Ip45" },
+          { value: "Ip45" },
+        ],
       },
 
       // Weight
       {
         id: "weight",
         name: "Weight",
-        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+        Values: [
+          { value: "70.5Ib" },
+          { value: "70.5Ib" },
+          { value: "70.5Ib" },
+          { value: "70.5Ib" },
+        ],
       },
 
       // Weight Metric
       {
         id: "weightMetric",
         name: "Weight Metric",
-        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+        Values: [
+          { value: "13Kg" },
+          { value: "13Kg" },
+          { value: "13Kg" },
+          { value: "13Kg" },
+        ],
       },
 
       // Dimensions
@@ -388,9 +440,10 @@ const ourProducts = [
         id: "dimensions",
         name: "Dimensions",
         Values: [
-          { value: "1.6ft*1.6ft*0.3FT" },
-          { value: "2.29*2.29*0.32FT" },
-          { value: "1.41*0.43*0.36FT" },
+          { value: "1.64ft*1.64ft" },
+          { value: "1.64ft*1.64ft" },
+          { value: "1.64ft*1.64ft" },
+          { value: "1.64ft*1.64ft" },
         ],
       },
 
@@ -398,14 +451,24 @@ const ourProducts = [
       {
         id: "dimensionsMetric",
         name: "Dimensions Metric",
-        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+        Values: [
+          { value: "OEM" },
+          { value: "OEM" },
+          { value: "OEM" },
+          { value: "OEM" },
+        ],
       },
 
-      // Dimensions Metric
+      //  Panel Power
       {
         id: "panelPower",
         name: "Panel Power",
-        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+        Values: [
+          { value: "800/250" },
+          { value: "800/250" },
+          { value: "800/250" },
+          { value: "800/250" },
+        ],
       },
 
       //    ************Manufacturing AND BUILD TABLE*************
@@ -415,9 +478,10 @@ const ourProducts = [
         id: "installation",
         name: "Installation",
         Values: [
-          { value: "Back Maintenance" },
-          { value: "Back Maintenance" },
-          { value: "Back Maintenance" },
+          { value: "Back Side" },
+          { value: "Back Side" },
+          { value: "Back Side" },
+          { value: "Back Side" },
         ],
       },
 
@@ -429,6 +493,7 @@ const ourProducts = [
           { value: "AC 100 – 240V" },
           { value: "AC 100 – 240V" },
           { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
         ],
       },
 
@@ -436,7 +501,12 @@ const ourProducts = [
       {
         id: "certifiations",
         name: "Certifiations",
-        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+        Values: [
+          { value: "CE" },
+          { value: "CE" },
+          { value: "CE" },
+          { value: "CE" },
+        ],
       },
     ],
   },
@@ -445,8 +515,10 @@ const ourProducts = [
   {
     id: "IledSpecialTileSeries",
     productName: "ILED SPECIAL TILE Series",
-    productHeadingLine: "",
-    productDetail: "",
+    productHeadingLine:
+      "Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
@@ -469,18 +541,14 @@ const ourProducts = [
       {
         id: "pixelPitch",
         name: "Pixel Pitch",
-        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+        Values: [{ value: "P1.95" }, { value: "P2.5" }, { value: "P2.6" }],
       },
 
       // Resolution
       {
         id: "resolution",
         name: "Resolution",
-        Values: [
-          { value: "500000" },
-          { value: "1200000" },
-          { value: "100800" },
-        ],
+        Values: [{ value: "65746" }, { value: "32873" }, { value: "100800" }],
       },
 
       // Brightness
@@ -488,9 +556,9 @@ const ourProducts = [
         id: "brightness",
         name: "Brightness",
         Values: [
-          { value: "1600nits" },
-          { value: "1600nits" },
-          { value: "1600nits" },
+          { value: "800nits" },
+          { value: "800nits" },
+          { value: "800nits" },
         ],
       },
 
@@ -499,9 +567,9 @@ const ourProducts = [
         id: "refreshRate",
         name: "Refresh Rate",
         Values: [
-          { value: NotAvailable },
-          { value: NotAvailable },
-          { value: NotAvailable },
+          { value: "1920Hz, 3840Hz" },
+          { value: "1920Hz, 3840Hz" },
+          { value: "1920Hz, 3840Hz" },
         ],
       },
 
@@ -516,7 +584,7 @@ const ourProducts = [
       {
         id: "colorDepth",
         name: "Color Depth",
-        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+        Values: [{ value: "16bit" }, { value: "16bit" }, { value: "16bit" }],
       },
 
       // Viewing Angle
@@ -550,18 +618,18 @@ const ourProducts = [
       {
         id: "operatingTemprature",
         name: "Operating Temprature",
-        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+        Values: [
+          { value: "-10 ~ 80 F" },
+          { value: "-10 ~ 80 F" },
+          { value: "-10 ~ 80 F" },
+        ],
       },
 
       // Operating Humidity
       {
         id: "operatingHumidity",
         name: "Operating Humidity",
-        Values: [
-          { value: "0 to 70%" },
-          { value: "0 to 70%" },
-          { value: "0 to 70%" },
-        ],
+        Values: [{ value: "40%" }, { value: "40%" }, { value: "40%" }],
       },
 
       // Enviroment Rating
@@ -575,14 +643,22 @@ const ourProducts = [
       {
         id: "weight",
         name: "Weight",
-        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+        Values: [
+          { value: "8.8/6.61/7.7Ib" },
+          { value: "8.8/6.61/7.7Ib" },
+          { value: "8.8/6.61/7.7Ib" },
+        ],
       },
 
       // Weight Metric
       {
         id: "weightMetric",
         name: "Weight Metric",
-        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+        Values: [
+          { value: "4/3/3.5Kg" },
+          { value: "4/3/3.5Kg" },
+          { value: "4/3/3.5Kg" },
+        ],
       },
 
       // Dimensions
@@ -590,9 +666,9 @@ const ourProducts = [
         id: "dimensions",
         name: "Dimensions",
         Values: [
-          { value: "1.6ft*1.6ft*0.3FT" },
-          { value: "2.29*2.29*0.32FT" },
-          { value: "1.41*0.43*0.36FT" },
+          { value: "28”x2.36”x1.18” " },
+          { value: "28”x2.36”x1.18” " },
+          { value: "28”x2.36”x1.18” " },
         ],
       },
 
@@ -600,14 +676,22 @@ const ourProducts = [
       {
         id: "dimensionsMetric",
         name: "Dimensions Metric",
-        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+        Values: [
+          { value: "1000/500/750" },
+          { value: "1000/500/750" },
+          { value: "1000/500/750" },
+        ],
       },
 
       // Dimensions Metric
       {
         id: "panelPower",
         name: "Panel Power",
-        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+        Values: [
+          { value: "100/80/90" },
+          { value: "100/80/90" },
+          { value: "100/80/90" },
+        ],
       },
 
       //    ************Manufacturing AND BUILD TABLE*************
@@ -617,9 +701,9 @@ const ourProducts = [
         id: "installation",
         name: "Installation",
         Values: [
-          { value: "Back Maintenance" },
-          { value: "Back Maintenance" },
-          { value: "Back Maintenance" },
+          { value: "Back side" },
+          { value: "Back side" },
+          { value: "Back side" },
         ],
       },
 
@@ -647,8 +731,10 @@ const ourProducts = [
   {
     id: "IbSeriesBlackLed",
     productName: "IB SERIES (BLACK LED)",
-    productHeadingLine: "",
-    productDetail: "",
+    productHeadingLine:
+      "Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
@@ -671,7 +757,12 @@ const ourProducts = [
       {
         id: "pixelPitch",
         name: "Pixel Pitch",
-        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+        Values: [
+          { value: "P1.25" },
+          { value: "P1.56" },
+          { value: "P1.66" },
+          { value: "P2.5" },
+        ],
       },
 
       // Resolution
@@ -679,9 +770,10 @@ const ourProducts = [
         id: "resolution",
         name: "Resolution",
         Values: [
-          { value: "500000" },
-          { value: "1200000" },
-          { value: "100800" },
+          { value: "160×120" },
+          { value: "128×96" },
+          { value: "120×90" },
+          { value: "104×78" },
         ],
       },
 
@@ -690,9 +782,10 @@ const ourProducts = [
         id: "brightness",
         name: "Brightness",
         Values: [
-          { value: "1600nits" },
-          { value: "1600nits" },
-          { value: "1600nits" },
+          { value: "800nits" },
+          { value: "800nits" },
+          { value: "800nits" },
+          { value: "800nits" },
         ],
       },
 
@@ -701,9 +794,10 @@ const ourProducts = [
         id: "refreshRate",
         name: "Refresh Rate",
         Values: [
-          { value: NotAvailable },
-          { value: NotAvailable },
-          { value: NotAvailable },
+          { value: "3840Hz" },
+          { value: "3840Hz" },
+          { value: "3840Hz" },
+          { value: "3840Hz" },
         ],
       },
 
@@ -711,14 +805,24 @@ const ourProducts = [
       {
         id: "contrast5000",
         name: "Contrast_5000",
-        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+        Values: [
+          { value: "5000:1" },
+          { value: "5000:1" },
+          { value: "5000:1" },
+          { value: "5000:1" },
+        ],
       },
 
       // Color Depth
       {
         id: "colorDepth",
         name: "Color Depth",
-        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+        Values: [
+          { value: "14bit" },
+          { value: "14bit" },
+          { value: "14bit" },
+          { value: "14bit" },
+        ],
       },
 
       // Viewing Angle
@@ -726,9 +830,10 @@ const ourProducts = [
         id: "viewingAngle",
         name: "Viewing Angle",
         Values: [
-          { value: "140/140" },
-          { value: "140/140" },
-          { value: "140/140" },
+          { value: "160/160" },
+          { value: "160/160" },
+          { value: "160/160" },
+          { value: "160/160" },
         ],
       },
 
@@ -736,7 +841,12 @@ const ourProducts = [
       {
         id: "diodeType",
         name: "Diode Type",
-        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+        Values: [
+          { value: "SMD" },
+          { value: "SMD" },
+          { value: "SMD" },
+          { value: "SMD" },
+        ],
       },
 
       //    ************ENGINEERING TABLE*************
@@ -745,14 +855,24 @@ const ourProducts = [
       {
         id: "indoorOutdoor",
         name: "Indoor/Outdoor",
-        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+        Values: [
+          { value: "Indoor" },
+          { value: "Indoor" },
+          { value: "Indoor" },
+          { value: "Indoor" },
+        ],
       },
 
       // Operating Temprature
       {
         id: "operatingTemprature",
         name: "Operating Temprature",
-        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+        Values: [
+          { value: "-10 ~ 80 F " },
+          { value: "-10 ~ 80 F " },
+          { value: "-10 ~ 80 F " },
+          { value: "-10 ~ 80 F " },
+        ],
       },
 
       // Operating Humidity
@@ -760,9 +880,10 @@ const ourProducts = [
         id: "operatingHumidity",
         name: "Operating Humidity",
         Values: [
-          { value: "0 to 70%" },
-          { value: "0 to 70%" },
-          { value: "0 to 70%" },
+          { value: "40%" },
+          { value: "40%" },
+          { value: "40%" },
+          { value: "40%" },
         ],
       },
 
@@ -770,21 +891,36 @@ const ourProducts = [
       {
         id: "enviromentRating",
         name: "Enviroment Rating",
-        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+        Values: [
+          { value: "Ip45" },
+          { value: "Ip45" },
+          { value: "Ip45" },
+          { value: "Ip45" },
+        ],
       },
 
       // Weight
       {
         id: "weight",
         name: "Weight",
-        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+        Values: [
+          { value: "70.5Ib" },
+          { value: "70.5Ib" },
+          { value: "70.5Ib" },
+          { value: "70.5Ib" },
+        ],
       },
 
       // Weight Metric
       {
         id: "weightMetric",
         name: "Weight Metric",
-        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+        Values: [
+          { value: "32Kg" },
+          { value: "32Kg" },
+          { value: "32Kg" },
+          { value: "32Kg" },
+        ],
       },
 
       // Dimensions
@@ -792,9 +928,10 @@ const ourProducts = [
         id: "dimensions",
         name: "Dimensions",
         Values: [
-          { value: "1.6ft*1.6ft*0.3FT" },
-          { value: "2.29*2.29*0.32FT" },
-          { value: "1.41*0.43*0.36FT" },
+          { value: "1.31ft*1.00ft" },
+          { value: "1.31ft*1.00ft" },
+          { value: "1.31ft*1.00ft" },
+          { value: "1.31ft*1.00ft" },
         ],
       },
 
@@ -802,14 +939,24 @@ const ourProducts = [
       {
         id: "dimensionsMetric",
         name: "Dimensions Metric",
-        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+        Values: [
+          { value: "OEM" },
+          { value: "OEM" },
+          { value: "OEM" },
+          { value: "OEM" },
+        ],
       },
 
-      // Dimensions Metric
+      // power panel
       {
         id: "panelPower",
         name: "Panel Power",
-        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+        Values: [
+          { value: "1600" },
+          { value: "1600" },
+          { value: "1600" },
+          { value: "1600" },
+        ],
       },
 
       //    ************Manufacturing AND BUILD TABLE*************
@@ -819,9 +966,10 @@ const ourProducts = [
         id: "installation",
         name: "Installation",
         Values: [
-          { value: "Back Maintenance" },
-          { value: "Back Maintenance" },
-          { value: "Back Maintenance" },
+          { value: "Back side" },
+          { value: "Back side" },
+          { value: "Back side" },
+          { value: "Back side" },
         ],
       },
 
@@ -830,6 +978,7 @@ const ourProducts = [
         id: "operatingVoltageAC",
         name: "Operating VoltageAC",
         Values: [
+          { value: "AC 100 – 240V" },
           { value: "AC 100 – 240V" },
           { value: "AC 100 – 240V" },
           { value: "AC 100 – 240V" },
@@ -849,8 +998,10 @@ const ourProducts = [
   {
     id: "TaxiTop",
     productName: "TAXI TOP",
-    productHeadingLine: "",
-    productDetail: "",
+    productHeadingLine:
+      "Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
@@ -873,7 +1024,7 @@ const ourProducts = [
       {
         id: "pixelPitch",
         name: "Pixel Pitch",
-        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+        Values: [{ value: "P2.5" }, { value: "P3" }, { value: "P4" }],
       },
 
       // Resolution
@@ -881,9 +1032,9 @@ const ourProducts = [
         id: "resolution",
         name: "Resolution",
         Values: [
-          { value: "500000" },
-          { value: "1200000" },
-          { value: "100800" },
+          { value: "160x160" },
+          { value: "128x96" },
+          { value: "120x90" },
         ],
       },
 
@@ -892,9 +1043,9 @@ const ourProducts = [
         id: "brightness",
         name: "Brightness",
         Values: [
-          { value: "1600nits" },
-          { value: "1600nits" },
-          { value: "1600nits" },
+          { value: "1500nits" },
+          { value: "800nits" },
+          { value: "800nits" },
         ],
       },
 
@@ -902,18 +1053,14 @@ const ourProducts = [
       {
         id: "refreshRate",
         name: "Refresh Rate",
-        Values: [
-          { value: NotAvailable },
-          { value: NotAvailable },
-          { value: NotAvailable },
-        ],
+        Values: [{ value: "1920Hz" }, { value: "1920Hz" }, { value: "1920Hz" }],
       },
 
       // Contrast 5000
       {
         id: "contrast5000",
         name: "Contrast_5000",
-        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+        Values: [{ value: "3000:1" }, { value: "3000:1" }, { value: "3000:1" }],
       },
 
       // Color Depth
@@ -947,14 +1094,24 @@ const ourProducts = [
       {
         id: "indoorOutdoor",
         name: "Indoor/Outdoor",
-        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+        Values: [
+          { value: "Outdoor" },
+          { value: "Outdoor" },
+          { value: "Outdoor" },
+          { value: "Outdoor" },
+        ],
       },
 
       // Operating Temprature
       {
         id: "operatingTemprature",
         name: "Operating Temprature",
-        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+        Values: [
+          { value: "-10 ~ 100 F" },
+          { value: "-10 ~ 100 F" },
+          { value: "-10 ~ 100 F" },
+          { value: "-10 ~ 100 F" },
+        ],
       },
 
       // Operating Humidity
@@ -962,9 +1119,10 @@ const ourProducts = [
         id: "operatingHumidity",
         name: "Operating Humidity",
         Values: [
-          { value: "0 to 70%" },
-          { value: "0 to 70%" },
-          { value: "0 to 70%" },
+          { value: "100%" },
+          { value: "100%" },
+          { value: "100%" },
+          { value: "100%" },
         ],
       },
 
@@ -972,21 +1130,36 @@ const ourProducts = [
       {
         id: "enviromentRating",
         name: "Enviroment Rating",
-        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+        Values: [
+          { value: "Ip65" },
+          { value: "Ip65" },
+          { value: "Ip65" },
+          { value: "Ip65" },
+        ],
       },
 
       // Weight
       {
         id: "weight",
         name: "Weight",
-        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+        Values: [
+          { value: "70.5Ib" },
+          { value: "70.5Ib" },
+          { value: "70.5Ib" },
+          { value: "70.5Ib" },
+        ],
       },
 
       // Weight Metric
       {
         id: "weightMetric",
         name: "Weight Metric",
-        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+        Values: [
+          { value: "32Kg" },
+          { value: "32Kg" },
+          { value: "32Kg" },
+          { value: "32Kg" },
+        ],
       },
 
       // Dimensions
@@ -994,9 +1167,10 @@ const ourProducts = [
         id: "dimensions",
         name: "Dimensions",
         Values: [
-          { value: "1.6ft*1.6ft*0.3FT" },
-          { value: "2.29*2.29*0.32FT" },
-          { value: "1.41*0.43*0.36FT" },
+          { value: "1.31ft*1.00ft" },
+          { value: "1.31ft*1.00ft" },
+          { value: "1.31ft*1.00ft" },
+          { value: "1.31ft*1.00ft" },
         ],
       },
 
@@ -1004,14 +1178,24 @@ const ourProducts = [
       {
         id: "dimensionsMetric",
         name: "Dimensions Metric",
-        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+        Values: [
+          { value: "OEM" },
+          { value: "OEM" },
+          { value: "OEM" },
+          { value: "OEM" },
+        ],
       },
 
-      // Dimensions Metric
+      // Power panel
       {
         id: "panelPower",
         name: "Panel Power",
-        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+        Values: [
+          { value: "1600" },
+          { value: "1600" },
+          { value: "1600" },
+          { value: "1600" },
+        ],
       },
 
       //    ************Manufacturing AND BUILD TABLE*************
@@ -1021,9 +1205,10 @@ const ourProducts = [
         id: "installation",
         name: "Installation",
         Values: [
-          { value: "Back Maintenance" },
-          { value: "Back Maintenance" },
-          { value: "Back Maintenance" },
+          { value: "Back side" },
+          { value: "Back side" },
+          { value: "Back side" },
+          { value: "Back side" },
         ],
       },
 
@@ -1035,6 +1220,7 @@ const ourProducts = [
           { value: "AC 100 – 240V" },
           { value: "AC 100 – 240V" },
           { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
         ],
       },
 
@@ -1042,7 +1228,12 @@ const ourProducts = [
       {
         id: "certifiations",
         name: "Certifiations",
-        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+        Values: [
+          { value: "CE" },
+          { value: "CE" },
+          { value: "CE" },
+          { value: "CE" },
+        ],
       },
     ],
   },
@@ -1051,8 +1242,10 @@ const ourProducts = [
   {
     id: "StreetPole",
     productName: "STREET POLE",
-    productHeadingLine: "",
-    productDetail: "",
+    productHeadingLine:
+      "Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
@@ -1075,18 +1268,14 @@ const ourProducts = [
       {
         id: "pixelPitch",
         name: "Pixel Pitch",
-        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+        Values: [{ value: "P3" }, { value: "P4" }, { value: "P5" }],
       },
 
       // Resolution
       {
         id: "resolution",
         name: "Resolution",
-        Values: [
-          { value: "500000" },
-          { value: "1200000" },
-          { value: "100800" },
-        ],
+        Values: [{ value: "64x63 " }, { value: "80x40" }, { value: "64x32" }],
       },
 
       // Brightness
@@ -1094,9 +1283,9 @@ const ourProducts = [
         id: "brightness",
         name: "Brightness",
         Values: [
-          { value: "1600nits" },
-          { value: "1600nits" },
-          { value: "1600nits" },
+          { value: "4200nits" },
+          { value: "5000nits" },
+          { value: "5500nits" },
         ],
       },
 
@@ -1104,11 +1293,7 @@ const ourProducts = [
       {
         id: "refreshRate",
         name: "Refresh Rate",
-        Values: [
-          { value: NotAvailable },
-          { value: NotAvailable },
-          { value: NotAvailable },
-        ],
+        Values: [{ value: "1920Hz" }, { value: "1920Hz" }, { value: "1920Hz" }],
       },
 
       // Contrast 5000
@@ -1122,7 +1307,7 @@ const ourProducts = [
       {
         id: "colorDepth",
         name: "Color Depth",
-        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+        Values: [{ value: "16bit" }, { value: "16bit" }, { value: "16bit" }],
       },
 
       // Viewing Angle
@@ -1149,46 +1334,50 @@ const ourProducts = [
       {
         id: "indoorOutdoor",
         name: "Indoor/Outdoor",
-        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+        Values: [
+          { value: "Outdoor" },
+          { value: "Outdoor" },
+          { value: "Outdoor" },
+        ],
       },
 
       // Operating Temprature
       {
         id: "operatingTemprature",
         name: "Operating Temprature",
-        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+        Values: [
+          { value: "-10 ~ 100 F" },
+          { value: "-10 ~ 100 F" },
+          { value: "-10 ~ 100 F" },
+        ],
       },
 
       // Operating Humidity
       {
         id: "operatingHumidity",
         name: "Operating Humidity",
-        Values: [
-          { value: "0 to 70%" },
-          { value: "0 to 70%" },
-          { value: "0 to 70%" },
-        ],
+        Values: [{ value: "100%" }, { value: "100%" }, { value: "100%" }],
       },
 
       // Enviroment Rating
       {
         id: "enviromentRating",
         name: "Enviroment Rating",
-        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+        Values: [{ value: "Ip65" }, { value: "Ip65" }, { value: "Ip65" }],
       },
 
       // Weight
       {
         id: "weight",
         name: "Weight",
-        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+        Values: [{ value: "99Ib" }, { value: "99Ib" }, { value: "99Ib" }],
       },
 
       // Weight Metric
       {
         id: "weightMetric",
         name: "Weight Metric",
-        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+        Values: [{ value: "45Kg" }, { value: "45Kg" }, { value: "45Kg" }],
       },
 
       // Dimensions
@@ -1196,9 +1385,9 @@ const ourProducts = [
         id: "dimensions",
         name: "Dimensions",
         Values: [
-          { value: "1.6ft*1.6ft*0.3FT" },
-          { value: "2.29*2.29*0.32FT" },
-          { value: "1.41*0.43*0.36FT" },
+          { value: "2.2ft*4.4ft" },
+          { value: "1.96*3.9ft" },
+          { value: "2.8*4.85ft" },
         ],
       },
 
@@ -1206,14 +1395,22 @@ const ourProducts = [
       {
         id: "dimensionsMetric",
         name: "Dimensions Metric",
-        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+        Values: [
+          { value: "676*1352mm" },
+          { value: "600*1200mm" },
+          { value: "868*1480mm" },
+        ],
       },
 
       // Dimensions Metric
       {
         id: "panelPower",
         name: "Panel Power",
-        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+        Values: [
+          { value: "400W-1200W" },
+          { value: "400W-1200W" },
+          { value: "400W-1200W" },
+        ],
       },
 
       //    ************Manufacturing AND BUILD TABLE*************
@@ -1223,9 +1420,9 @@ const ourProducts = [
         id: "installation",
         name: "Installation",
         Values: [
-          { value: "Back Maintenance" },
-          { value: "Back Maintenance" },
-          { value: "Back Maintenance" },
+          { value: "Back side" },
+          { value: "Back side" },
+          { value: "Back side" },
         ],
       },
 
@@ -1285,7 +1482,7 @@ const ourProducts = [
         id: "resolution",
         name: "Resolution",
         Values: [
-          { value: "500000" },
+          { value: "160×120" },
           { value: "1200000" },
           { value: "100800" },
         ],
