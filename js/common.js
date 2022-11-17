@@ -5,7 +5,14 @@ const ElidHeaderTwitter = document.getElementById("idHeaderTwitter");
 const ElidHeaderInstagram = document.getElementById("idHeaderInstagram");
 const ElidHeaderGetQuote = document.getElementById("idHeaderGetQuote");
 const ElidHeaderLogo = document.getElementById("idHeaderLogo");
-
+const ElidHeaderLinkHome = document.getElementById("idHeaderLinkHome");
+const ElidHeaderLinkAboutUs = document.getElementById("idHeaderLinkAboutUs");
+const ElidHeaderlinkProducts = document.getElementById("idHeaderlinkProducts");
+const ElidHeaderLinkMarkets = document.getElementById("idHeaderLinkMarkets");
+const ElidHeaderLinkSupport = document.getElementById("idHeaderLinkSupport");
+const ElidHeaderLinkContactUs = document.getElementById(
+  "idHeaderLinkContactUs"
+);
 // Rendering Header Elements
 ElidHeaderSales.innerHTML = `
 Sales:
@@ -81,8 +88,26 @@ GET A QUOTE
 </svg>`;
 
 ElidHeaderLogo.src = `img/demos/industry-factory/logo.png`;
-ElidHeaderLogo.style.width = `123`;
-ElidHeaderLogo.style.height = `23`;
+// ElidHeaderLogo.style.width = `123`;
+// ElidHeaderLogo.style.height = `23`;
+
+ElidHeaderLinkHome.textContent = `Home`;
+ElidHeaderLinkHome.href = `index.html`;
+
+ElidHeaderLinkAboutUs.textContent = `About Us`;
+ElidHeaderLinkAboutUs.href = `about-us.html`;
+
+ElidHeaderlinkProducts.textContent = `Products`;
+ElidHeaderlinkProducts.href = `products.html`;
+
+ElidHeaderLinkMarkets.textContent = `Markets`;
+ElidHeaderLinkMarkets.href = `#`;
+
+ElidHeaderLinkSupport.textContent = `Support`;
+ElidHeaderLinkSupport.href = `services.html`;
+
+ElidHeaderLinkContactUs.textContent = `Contact`;
+ElidHeaderLinkContactUs.href = `contact.html`;
 
 const FnCLickedProduct = (CLickedProductId) => {
   clikedProduct = sessionStorage.setItem("productId", CLickedProductId);
