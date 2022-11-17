@@ -960,7 +960,8 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-    imageForProductPage: "img/demos/industry-factory/products/product-1.jpg",
+    imageForProductPage:
+      "img/demos/industry-factory/products/IbSeriesBlackLed.png",
     productImages: [
       {
         image: "",
@@ -1228,7 +1229,7 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-    imageForProductPage: "img/demos/industry-factory/products/product-1.jpg",
+    imageForProductPage: "img/demos/industry-factory/products/TaxiTop.jpg",
     productImages: [
       {
         image: "",
@@ -1473,7 +1474,7 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-    imageForProductPage: "img/demos/industry-factory/products/product-1.jpg",
+    imageForProductPage: "img/demos/industry-factory/products/StreetPole.jpg",
     productImages: [
       {
         image: "",
@@ -1682,10 +1683,11 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-    imageForProductPage: "img/demos/industry-factory/products/product-1.jpg",
+    imageForProductPage: "img/demos/industry-factory/products/IlexSeries.jpg",
     productImages: [
       {
-        image: "",
+        image:
+          "img/demos/industry-factory/products/ProductDetails/3dHologram1.jpg",
       },
       {
         image: "",
