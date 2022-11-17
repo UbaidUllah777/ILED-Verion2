@@ -1,3 +1,5 @@
+// ********** VENDERING FROM PAGE PRODUCT DETAILS : START *************
+
 const ElidProductName = document.getElementById("idProductName");
 const ElidProductHeadingLine = document.getElementById("idProductHeadingLine");
 const ElidProductDetail_one = document.getElementById("idProductDetail_one");
@@ -28,6 +30,15 @@ const Elinstallation = document.getElementById("installation");
 const EloperatingVoltageAC = document.getElementById("operatingVoltageAC");
 const Elcertifiations = document.getElementById("certifiations");
 
+// ********** VENDERING FROM PAGE PRODUCT DETAILS : END *************
+//
+//
+// ********** VEDERING FROM PAGE PRODUCTS :START
+const ElidAllProductsContainer = document.getElementById(
+  "idAllProductsContainer"
+);
+// ********** VEDERING FROM PAGE PRODUCTS :END
+//
 // if some column data is Not available the we wil use this variable
 const NotAvailable = "N/A";
 const clickedProduct = sessionStorage.getItem("productId");
@@ -46,6 +57,7 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
+    imageForProductPage: "img/demos/industry-factory/products/3DHOLOGRAM.jpg",
     productImages: [
       {
         image: "",
@@ -250,6 +262,8 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
+    imageForProductPage:
+      "img/demos/industry-factory/products/OutdoorFixedSeries.jpg",
     productImages: [
       {
         image: "",
@@ -454,6 +468,8 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
+    imageForProductPage:
+      "img/demos/industry-factory/products/ULTransparentDisplay.png",
     productImages: [
       {
         image: "",
@@ -726,6 +742,7 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
+    imageForProductPage: "img/demos/industry-factory/products/product-1.jpg",
     productImages: [
       {
         image: "",
@@ -942,6 +959,7 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
+    imageForProductPage: "img/demos/industry-factory/products/product-1.jpg",
     productImages: [
       {
         image: "",
@@ -1209,6 +1227,7 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
+    imageForProductPage: "img/demos/industry-factory/products/product-1.jpg",
     productImages: [
       {
         image: "",
@@ -1453,6 +1472,7 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
+    imageForProductPage: "img/demos/industry-factory/products/product-1.jpg",
     productImages: [
       {
         image: "",
@@ -1661,6 +1681,7 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
+    imageForProductPage: "img/demos/industry-factory/products/product-1.jpg",
     productImages: [
       {
         image: "",
@@ -1920,121 +1941,177 @@ const ourProducts = [
 
 //  ********** RENDERING DATA ON THE 3 TABLES(SPACIFICATIONS)  **********
 for (const singleProduct of ourProducts) {
-  if (singleProduct.id === clickedProduct) {
-    ElidProductName.textContent = `${singleProduct.productName}`;
-    ElidProductHeadingLine.textContent = `${singleProduct.productHeadingLine}`;
-    ElidProductDetail_one.textContent = `${singleProduct.productDetail}`;
-    ElidtagLine_one.textContent = `${singleProduct.tagLine_one}`;
-    ElidtagLine_two.textContent = `${singleProduct.tagLine_two}`;
-    ElidtagLine_three.textContent = `${singleProduct.tagLine_three}`;
+  if (ElpixelPitch) {
+    if (singleProduct.id === clickedProduct) {
+      ElidProductName.textContent = `${singleProduct.productName}`;
+      ElidProductHeadingLine.textContent = `${singleProduct.productHeadingLine}`;
+      ElidProductDetail_one.textContent = `${singleProduct.productDetail}`;
+      ElidtagLine_one.textContent = `${singleProduct.tagLine_one}`;
+      ElidtagLine_two.textContent = `${singleProduct.tagLine_two}`;
+      ElidtagLine_three.textContent = `${singleProduct.tagLine_three}`;
 
-    for (const singleProperty of singleProduct.DisplayProperties) {
-      if (singleProperty.id == "pixelPitch") {
-        for (singleValue of singleProperty.Values) {
-          ElpixelPitch.innerHTML += `<td>${singleValue.value}</td>`;
+      for (const singleProperty of singleProduct.DisplayProperties) {
+        if (singleProperty.id == "pixelPitch") {
+          for (singleValue of singleProperty.Values) {
+            ElpixelPitch.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "resolution") {
-        for (singleValue of singleProperty.Values) {
-          Elresolution.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "resolution") {
+          for (singleValue of singleProperty.Values) {
+            Elresolution.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "brightness") {
-        for (singleValue of singleProperty.Values) {
-          Elbrightness.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "brightness") {
+          for (singleValue of singleProperty.Values) {
+            Elbrightness.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "refreshRate") {
-        for (singleValue of singleProperty.Values) {
-          ElrefreshRate.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "refreshRate") {
+          for (singleValue of singleProperty.Values) {
+            ElrefreshRate.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "contrast5000") {
-        for (singleValue of singleProperty.Values) {
-          Elcontrast5000.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "contrast5000") {
+          for (singleValue of singleProperty.Values) {
+            Elcontrast5000.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "colorDepth") {
-        for (singleValue of singleProperty.Values) {
-          ElcolorDepth.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "colorDepth") {
+          for (singleValue of singleProperty.Values) {
+            ElcolorDepth.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "viewingAngle") {
-        for (singleValue of singleProperty.Values) {
-          ElviewingAngle.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "viewingAngle") {
+          for (singleValue of singleProperty.Values) {
+            ElviewingAngle.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "diodeType") {
-        for (singleValue of singleProperty.Values) {
-          EldiodeType.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "diodeType") {
+          for (singleValue of singleProperty.Values) {
+            EldiodeType.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
 
-      // ENGINEERING Table
+        // ENGINEERING Table
 
-      if (singleProperty.id == "indoorOutdoor") {
-        for (singleValue of singleProperty.Values) {
-          ElindoorOutdoor.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "indoorOutdoor") {
+          for (singleValue of singleProperty.Values) {
+            ElindoorOutdoor.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "operatingTemprature") {
-        for (singleValue of singleProperty.Values) {
-          EloperatingTemprature.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "operatingTemprature") {
+          for (singleValue of singleProperty.Values) {
+            EloperatingTemprature.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "operatingHumidity") {
-        for (singleValue of singleProperty.Values) {
-          EloperatingHumidity.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "operatingHumidity") {
+          for (singleValue of singleProperty.Values) {
+            EloperatingHumidity.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "enviromentRating") {
-        for (singleValue of singleProperty.Values) {
-          ElenviromentRating.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "enviromentRating") {
+          for (singleValue of singleProperty.Values) {
+            ElenviromentRating.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "weight") {
-        for (singleValue of singleProperty.Values) {
-          Elweight.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "weight") {
+          for (singleValue of singleProperty.Values) {
+            Elweight.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "weightMetric") {
-        for (singleValue of singleProperty.Values) {
-          ElweightMetric.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "weightMetric") {
+          for (singleValue of singleProperty.Values) {
+            ElweightMetric.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "dimensions") {
-        for (singleValue of singleProperty.Values) {
-          Eldimensions.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "dimensions") {
+          for (singleValue of singleProperty.Values) {
+            Eldimensions.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "dimensionsMetric") {
-        for (singleValue of singleProperty.Values) {
-          EldimensionsMetric.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "dimensionsMetric") {
+          for (singleValue of singleProperty.Values) {
+            EldimensionsMetric.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "panelPower") {
-        for (singleValue of singleProperty.Values) {
-          ElpanelPower.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "panelPower") {
+          for (singleValue of singleProperty.Values) {
+            ElpanelPower.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
 
-      // Manufacturing Table
+        // Manufacturing Table
 
-      if (singleProperty.id == "installation") {
-        for (singleValue of singleProperty.Values) {
-          Elinstallation.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "installation") {
+          for (singleValue of singleProperty.Values) {
+            Elinstallation.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "operatingVoltageAC") {
-        for (singleValue of singleProperty.Values) {
-          EloperatingVoltageAC.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "operatingVoltageAC") {
+          for (singleValue of singleProperty.Values) {
+            EloperatingVoltageAC.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
-      }
-      if (singleProperty.id == "certifiations") {
-        for (singleValue of singleProperty.Values) {
-          Elcertifiations.innerHTML += `<td>${singleValue.value}</td>`;
+        if (singleProperty.id == "certifiations") {
+          for (singleValue of singleProperty.Values) {
+            Elcertifiations.innerHTML += `<td>${singleValue.value}</td>`;
+          }
         }
       }
     }
+  }
+}
+
+for (const singleProduct of ourProducts) {
+  if (ElidAllProductsContainer) {
+    ElidAllProductsContainer.innerHTML += `
+    
+    <div class="col-md-6 col-lg-4 mb-4">
+    <article>
+      <div class="card border-0 border-radius-0 box-shadow-1">
+        <div class="card-body p-4 z-index-1">
+          <a  id="${singleProduct.id}" onclick="FnCLickedProduct('${singleProduct.id}') "href="products-detail.html">
+            <img
+              class="card-img-top border-radius-0 mb-4"
+              src="${singleProduct.imageForProductPage}"
+              alt="${singleProduct.productName}"
+            />
+          </a>
+          <div class="card-body p-0">
+            <h4 class="card-title mb-3 text-5 font-weight-semibold">
+              <a
+                class="text-color-dark text-color-hover-primary text-decoration-none"
+                href="products-detail.html"
+                >${singleProduct.productName}</a
+              >
+            </h4>
+            <p class="card-text mb-0">
+              ${singleProduct.productHeadingLine}
+            </p>
+            <a  id="${singleProduct.id}" onclick="FnCLickedProduct('${singleProduct.id}') "href="products-detail.html" class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
+            >
+              VIEW MORE
+              <svg
+                class="ms-2"
+                version="1.1"
+                viewBox="0 0 15.698 8.706"
+                width="17"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <polygon
+                  stroke="#FFF"
+                  stroke-width="0.1"
+                  fill="#FFF"
+                  points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>`;
   }
 }
