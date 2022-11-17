@@ -742,7 +742,8 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-    imageForProductPage: "img/demos/industry-factory/products/product-1.jpg",
+    imageForProductPage:
+      "img/demos/industry-factory/products/IledSpecialTileSeries.jpg",
     productImages: [
       {
         image: "",
