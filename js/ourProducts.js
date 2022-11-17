@@ -2082,7 +2082,7 @@ for (const singleProduct of ourProducts) {
             <h4 class="card-title mb-3 text-5 font-weight-semibold">
               <a
                 class="text-color-dark text-color-hover-primary text-decoration-none"
-                href="products-detail.html"
+                id="${singleProduct.id}" onclick="FnCLickedProduct('${singleProduct.id}') "href="products-detail.html"
                 >${singleProduct.productName}</a
               >
             </h4>
