@@ -9,6 +9,13 @@ const ElidtagLine_two = document.getElementById("idtagLine_two");
 const ElidtagLine_three = document.getElementById("idtagLine_three");
 
 //  ********* VENDERING ALL PRPERTY NAMES OF THE THREE TABLES ********
+
+//  ********* TABLE's Heading: START ********
+const ElidDisplaySpecs = document.getElementById("idDisplaySpecs");
+const ElidEngineeringSpecs=document.getElementById('idEngineeringSpecs');
+const ElidManufacSpecs=document.getElementById("idManufacSpecs");
+//  ********* TABLE's Heading: END ********
+
 const ElpixelPitch = document.getElementById("pixelPitch");
 const Elresolution = document.getElementById("resolution");
 const Elbrightness = document.getElementById("brightness");
@@ -1941,6 +1948,30 @@ const ourProducts = [
     ],
   },
 ];
+
+for (const singleProduct of ourProducts) {
+  if (ElpixelPitch) {
+    if (singleProduct.id === clickedProduct) {
+      var i = 1;
+      for (const singleProperty of singleProduct.DisplayProperties) {
+        if (singleProperty.id == "pixelPitch") {
+        for (singleValue of singleProperty.Values) {   
+          ElidDisplaySpecs.innerHTML += `<th>
+          ${'Model '+i}
+        </th>`;
+        ElidEngineeringSpecs.innerHTML+=`<th>
+        ${'Model '+i}
+      </th>`
+      ElidManufacSpecs.innerHTML+=`<th>
+      ${'Model '+i}
+    </th>`
+        i=i+1;
+        }
+      }
+      }
+    }
+  }
+}
 
 //  ********** RENDERING DATA ON THE 3 TABLES(SPACIFICATIONS)  **********
 for (const singleProduct of ourProducts) {
