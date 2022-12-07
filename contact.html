@@ -223,10 +223,11 @@
 				<!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
 				<!-- <div id="googlemaps" class="google-map m-0" style="height:500px;"></div> -->
 
-				<div class="container py-5 my-4>
+					<!-- CONATCT US FORM -->
+				<div class="container py-5 my-4">
 					<div class="row">
 						
-						<div class="col-lg-6">
+						<div class="col-lg-12">
 							<h2 class="font-weight-bold text-transform-none text-8 pb-2 mb-4">Send Us a Message</h2>
 							<form class="contact-form custom-form-style-1" action="php/contact-form.php" method="POST">
 								<div class="contact-form-success alert alert-success d-none mt-4">
@@ -250,6 +251,31 @@
 								</div>
 								<div class="row">
 									<div class="form-group col">
+										<div class="custom-select-1">
+											  <select class="form-select form-control h-auto" data-msg-required="Please select a Model Line." name="ModelLine" required="">
+												<option value="">Model Line</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+											  </select>
+										  </div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="form-group col">
+										<div class="custom-select-1">
+											  <select class="form-select form-control h-auto" data-msg-required="Please select a Variant." name="Variant" required="">
+												<option value="">Variant</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+											  </select>
+										  </div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col">
 										<textarea maxlength="5000" data-msg-required="Please enter your message." rows="6" class="form-control" name="message" placeholder="Your Message" required></textarea>
 									</div>
 								</div>
@@ -266,6 +292,11 @@
 							</form>
 						</div>
 
+					</div>
+				</div>
+	<!-- OUR Locations -->
+				<div class="container py-5 my-4">
+					<div class="row">
 						<div class="col-lg-12 mb-5 mb-lg-0">
 							<h2 class="font-weight-bold text-transform-none text-8 pt-2 mt-2 pb-2 mb-4">Our Locations</h2>
 							<div class="row">
@@ -336,7 +367,6 @@
 						</div>
 					</div>
 				</div>
-
 			</div> 
 
 		
