@@ -52,7 +52,8 @@ title="Instagram"
 ></a>`;
 
 ElidHeaderGetQuote.innerHTML = `GET A QUOTE <i class="fas fa-arrow-right ms-2"></i>`;
-ElidHeaderGetQuote2.innerHTML = `GET A QUOTE <i class="fas fa-arrow-right ms-2"></i>`;
+if(ElidHeaderGetQuote2){
+  ElidHeaderGetQuote2.innerHTML = `GET A QUOTE <i class="fas fa-arrow-right ms-2"></i>`;}
 
 ElidHeaderLogo.src = `img/demos/industry-factory/logo.png`;
 // ElidHeaderLogo.style.width = `123`;
