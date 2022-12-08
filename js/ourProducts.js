@@ -12,8 +12,8 @@ const ElidtagLine_three = document.getElementById("idtagLine_three");
 
 //  ********* TABLE's Heading: START ********
 const ElidDisplaySpecs = document.getElementById("idDisplaySpecs");
-const ElidEngineeringSpecs=document.getElementById('idEngineeringSpecs');
-const ElidManufacSpecs=document.getElementById("idManufacSpecs");
+const ElidEngineeringSpecs = document.getElementById("idEngineeringSpecs");
+const ElidManufacSpecs = document.getElementById("idManufacSpecs");
 //  ********* TABLE's Heading: END ********
 
 const ElpixelPitch = document.getElementById("pixelPitch");
@@ -1955,19 +1955,19 @@ for (const singleProduct of ourProducts) {
       var i = 1;
       for (const singleProperty of singleProduct.DisplayProperties) {
         if (singleProperty.id == "pixelPitch") {
-        for (singleValue of singleProperty.Values) {   
-          ElidDisplaySpecs.innerHTML += `<th>
-          ${'Model '+i}
+          for (singleValue of singleProperty.Values) {
+            ElidDisplaySpecs.innerHTML += `<th>
+          ${"Model " + i}
         </th>`;
-        ElidEngineeringSpecs.innerHTML+=`<th>
-        ${'Model '+i}
-      </th>`
-      ElidManufacSpecs.innerHTML+=`<th>
-      ${'Model '+i}
-    </th>`
-        i=i+1;
+            ElidEngineeringSpecs.innerHTML += `<th>
+        ${"Model " + i}
+      </th>`;
+            ElidManufacSpecs.innerHTML += `<th>
+      ${"Model " + i}
+    </th>`;
+            i = i + 1;
+          }
         }
-      }
       }
     }
   }
